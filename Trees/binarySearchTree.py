@@ -82,7 +82,7 @@ class BST:
                 return temp
             node= self.rchild
             while node.lchild:
-                node= self.lchild
+                node= node.lchild
             self.key= node.key
             self.rchild= self.rchild.delete(node.key)
         return self
@@ -96,3 +96,4 @@ x.preorder()
 print("\ndeleted")
 x.delete(7)
 x.preorder()
+
