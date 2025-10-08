@@ -35,10 +35,12 @@ def delete_edge(v1, v2):
 
 
 graph= {}
-add_node('A')
-add_node('B')
-add_node('C')
-add_edge('A', 'C')
-# delete_node('B')
-delete_edge('A', 'C')
-print(graph)
+
+if __name__ == "main":
+    add_node('A')
+    add_node('B')
+    add_node('C')
+    add_edge('A', 'C')
+    # delete_node('B')
+    delete_edge('A', 'C')
+    print(graph)
